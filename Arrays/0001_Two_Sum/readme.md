@@ -1,0 +1,66 @@
+# 1. Two Sum
+
+**Difficulty:** Easy
+
+## Problem Statement
+
+Given an integer array `nums` and an integer `target`, return the indices of the two numbers such that they add up to `target`.
+
+You may assume that:
+- Exactly one valid solution exists.
+- You cannot use the same element twice.
+- The answer can be returned in any order.
+
+## Examples
+
+### Example 1
+
+Input:
+nums = [2,7,11,15]
+target = 9
+
+Output:
+[0,1]
+
+### Example 2
+
+Input:
+nums = [3,2,4]
+target = 6
+
+Output:
+[1,2]
+
+### Example 3
+
+Input:
+nums = [3,3]
+target = 6
+
+Output:
+[0,1]
+
+## Constraints
+
+- 2 <= nums.length <= 10⁴
+- -10⁹ <= nums[i] <= 10⁹
+- -10⁹ <= target <= 10⁹
+- Exactly one valid answer exists.
+
+## Approach
+
+Use a hash map (dictionary) to store each number and its index.
+
+For every element:
+1. Calculate the complement (`target - current_number`).
+2. Check whether the complement already exists in the dictionary.
+3. If yes, return both indices.
+4. Otherwise, store the current number and its index.
+
+## Time Complexity
+
+O(n)
+
+## Space Complexity
+
+O(n)
