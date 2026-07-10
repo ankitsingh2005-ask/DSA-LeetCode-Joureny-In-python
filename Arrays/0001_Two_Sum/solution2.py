@@ -31,8 +31,8 @@ class Solution(object):
 if __name__ == "__main__":
     solution = Solution()
 
-    nums = [2,5,7,8,12]
-    target = 9
+    nums = [3,2,4]
+    target = 6
 
     #function calling 
     result = solution.twoSum(nums, target)
