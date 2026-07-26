@@ -20,7 +20,7 @@ class Solution:
 
 if __name__ == "__main__":
     sol = Solution()
-    nums = [2,-5,1,-4,3,-2]
+    nums = [2,-5,1,-4,3,-2] 
 
     result = sol.maxAbsSum(nums)
     print(result)
